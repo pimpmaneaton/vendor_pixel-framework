@@ -141,6 +141,36 @@
         settings:searchable="true"
         settings:position="bottom" />
 
+    <PreferenceCategory
+        android:title="@string/pixel_parts">
+  
+    <com.rising.settings.preferences.AdaptivePreference
+        android:key="pixelparts_batteryinfo"
+        android:title="@string/battery_info_title"
+        android:summary="@string/battery_info_summary"
+        android:icon="@drawable/ic_battery_info_tile"
+        settings:position="bottom">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="org.evolution.pixelparts"
+            android:targetClass="org.evolution.pixelparts.batteryinfo.BatteryInfoActivity" />
+    </com.rising.settings.preferences.AdaptivePreference>
+    
+    <com.rising.settings.preferences.AdaptivePreference
+        android:key="pixelparts_fastcharge"
+        android:title="@string/fast_charge_title"
+        android:summary="@string/fast_charge_summary"
+        android:icon="@drawable/ic_fast_charge_tile"
+        settings:position="bottom">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="org.evolution.pixelparts"
+            android:targetClass="org.evolution.pixelparts.fastcharge.FastChargeActivity" />
+    </com.rising.settings.preferences.AdaptivePreference>
+    </PreferenceCategory>
+
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
         android:title="@string/battery_footer_summary"

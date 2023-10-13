@@ -273,7 +273,37 @@
             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"
             settings:position="middle"/>
     </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pixel_parts">
+
+    <com.rising.settings.preferences.AdaptivePreference
+        android:key="pixelparts_hbm"
+        android:title="@string/auto_hbm_title"
+        android:summary="@string/auto_hbm_summary"
+        android:icon="@drawable/ic_auto_hbm_tile"
+        settings:position="bottom">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="org.evolution.pixelparts"
+            android:targetClass="org.evolution.pixelparts.autohbm.AutoHbmActivity" />
+    </com.rising.settings.preferences.AdaptivePreference>
     
+    <com.rising.settings.preferences.AdaptivePreference
+        android:key="pixelparts_saturation"
+        android:title="@string/saturation_title"
+        android:summary="@string/saturation_summary"
+        android:icon="@drawable/ic_saturation_tile"
+        settings:position="bottom">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="org.evolution.pixelparts"
+            android:targetClass="org.evolution.pixelparts.saturation.SaturationActivity" />
+    </com.rising.settings.preferences.AdaptivePreference>
+    </PreferenceCategory>
+
     <com.rising.settings.preferences.AdaptivePreference
         android:key="desktop_mode_pc"
         android:title="@string/desktop_mode_pc_title"
