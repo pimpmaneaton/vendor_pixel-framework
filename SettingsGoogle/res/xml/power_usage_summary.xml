@@ -149,7 +149,7 @@
         android:title="@string/battery_info_title"
         android:summary="@string/battery_info_summary"
         android:icon="@drawable/ic_battery_info_tile"
-        settings:position="bottom">
+        settings:position="top">
 
         <intent
             android:action="android.intent.action.MAIN"
