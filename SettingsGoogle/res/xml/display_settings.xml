@@ -23,7 +23,7 @@
 
     <com.android.settingslib.widget.IllustrationPreference
         android:key="display_illustration"
-        settings:lottie_rawRes="@raw/display_illustration"
+        settings:lottie_rawRes="@raw/lottie_aware_display"
         android:order="-1001" />
 
     <PreferenceCategory
