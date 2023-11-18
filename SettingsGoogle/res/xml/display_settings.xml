@@ -191,14 +191,6 @@
             settings:keywords="@string/display_cutout_emulation_keywords"
             settings:position="middle" />
 
-        <com.rising.settings.preferences.AdaptivePreference
-            android:key="screensaver"
-            android:title="@string/screensaver_settings_title"
-            android:fragment="com.android.settings.dream.DreamSettings"
-            settings:keywords="@string/keywords_screensaver"
-            settings:controller="com.android.settings.display.ScreenSaverPreferenceController"
-            settings:position="middle"/>
-
         <com.rising.settings.preferences.AdaptiveSwitchPreference
             android:key="camera_gesture"
             android:title="@string/camera_gesture_title"
